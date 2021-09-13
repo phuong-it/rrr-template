@@ -1,0 +1,16 @@
+import React from 'react';
+import { action } from '@storybook/addon-actions';
+import { storiesOf } from '@storybook/react';
+import { {{componentName}}, {{componentName}}Props } from '../';
+
+storiesOf('{{componentName}}', module)
+  .add(
+    'Default',
+    () => render({})
+  );
+
+function render(props: {{componentName}}Props) {
+  return (
+    <{{componentName}} {...props} onChange={action('onChange')} />
+  );
+}
